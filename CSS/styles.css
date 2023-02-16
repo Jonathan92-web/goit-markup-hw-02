@@ -8,33 +8,24 @@
     --bg-card: #FFFFFF;
 }
 
-body {
+
+body,
+button {
     font-family: 'Roboto', 'verdana', sans-serif;
     color: #212121;
 
 }
 
-a {
+.link {
     text-decoration: none;
-}
-
-ul {
     list-style-type: none;
 }
 
-h1 {
-    color: var(--text-white);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3;
+.link .navigation-item {
+    text-decoration: none;
+
 }
 
-h2 {
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-}
 
 /*header*/
 .nav-link {
@@ -45,6 +36,8 @@ h2 {
     line-height: 1.2;
 }
 
+
+
 .navigation-item {
     color: var(--primary-color);
     font-weight: 500;
@@ -52,10 +45,18 @@ h2 {
     line-height: 1.1;
 }
 
+.current-link {
+    color: var(--secondary-color);
+}
+
+
 .navigation-item:hover,
 .navigation-item:focus {
     color: var(--secondary-color);
 }
+
+
+
 
 .info {
     color: var(--detail-color);
@@ -86,8 +87,21 @@ h2 {
     background-color: var(--bg-main);
 }
 
+.text-white {
+    color: var(--text-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3;
+}
+
+.main-color {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
 .button {
-    font-family: 'Roboto', 'verdana', sans-serif;
     background-color: var(--secondary-color);
     color: var(--text-white);
     cursor: pointer;
@@ -167,10 +181,14 @@ h2 {
 
 /*portfolio-main*/
 
+.link .current-button {
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+}
+
 .button-filter {
     background-color: var(--bg-section);
     color: var(--primary-color);
-    font-family: 'Roboto', 'verdana', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -184,6 +202,7 @@ h2 {
 }
 
 .project {
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
